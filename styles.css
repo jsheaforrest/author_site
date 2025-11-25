@@ -11,7 +11,7 @@ html, body {
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
-    background-color: #d8ffed;
+    background-color: #d1fce8;
     color: #2c3e35;
     line-height: 1.6;
     display: flex;
@@ -21,12 +21,12 @@ body {
 
 /* Navigation Styles */
 nav {
-    background-color: #a36caa;
+    background-color: #d3b1d7;
    /* background-image: url('pencilsnav.png'); */
     background-repeat: repeat-x;
     background-position: center;
     background-size: auto 100%;
-    background: #a36caa;
+    background: #d9acdf;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -155,10 +155,9 @@ footer {
     padding: 0;
     height: 200px;
     min-height: 200px;
-    background-image: url('JShea/pencils.png');
+    background-image: url('pencils.png');
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: auto 120px;
     flex-shrink: 0;
 }
-
