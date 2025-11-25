@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    background-color: #d8ffed;
+    color: #2c3e35;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #a36caa;
+   /* background-image: url('pencilsnav.png'); */
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    background: #a36caa;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.nav-button {
+    background-color: #744579;
+    color: white;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #52a483;
+}
+
+.nav-button.active {
+    background-color: #1e7657;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem 2rem 2rem;
+    flex: 1;
+}
+
+h1 {
+    color: #7448a1;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: #6e3e7a;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.container .centertext {
+    text-align: center;
+}
+/* Blog Posts */
+.blog-post {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.blog-post:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog-post h3 {
+    color: #4a7a6b;
+    margin-bottom: 0.5rem;
+}
+
+.blog-date {
+    color: #6a898a;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Book Cards */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.book-card h3 {
+    color: #3d6a3d;
+    margin-bottom: 1rem;
+}
+
+/* Book Cover Images */
+.book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.02);
+}
+
+/* Footer with pencil image */
+footer {
+    margin-top: auto;
+    padding: 0;
+    height: 200px;
+    min-height: 200px;
+    background-image: url('JShea/pencils.png');
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 120px;
+    flex-shrink: 0;
+}
+
