@@ -152,12 +152,72 @@ p {
 /* Footer with pencil image */
 footer {
     margin-top: auto;
-    padding: 0;
-    height: 200px;
-    min-height: 200px;
+    flex-shrink: 0;
+}
+
+.pencils {
+    height: 120px;
     background-image: url('pencils.png');
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: auto 120px;
-    flex-shrink: 0;
+}
+
+/* Fix for posts subfolder */
+.posts-page .pencils {
+    background-image: url('../pencils.png');
+}
+
+.social-bar {
+    background-color: #5a3d6e;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.social-bar a {
+    display: inline-block;
+    background-color: #a36caa;
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-bar a:hover {
+    background-color: #c490ca;
+}
+
+/* Blog Links */
+.read-more {
+    display: inline-block;
+    color: #744579;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #52a483;
+}
+
+.back-link {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.back-link a {
+    color: #744579;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #52a483;
 }
