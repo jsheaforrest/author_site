@@ -37,12 +37,11 @@ body::before {
 
 /* Navigation Styles */
 nav {
-    background-color: #d3b1d7;
+    background: radial-gradient(ellipse, #e5cde8, #8f6eaf);
    /* background-image: url('pencilsnav.png'); */
     background-repeat: repeat-x;
     background-position: center;
     background-size: auto 100%;
-    background: #d9acdf;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -63,9 +62,10 @@ nav {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 0;
+    border: 3px solid rgba(255, 255, 255, 0.5);
     transition: background-color 0.3s ease;
     border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-button:hover {
@@ -194,7 +194,7 @@ footer {
 }
 
 .social-bar {
-    background-color: #5a3d6e;
+    background: radial-gradient(ellipse, #874092, #510659);
     padding: 1.5rem 1rem;
     text-align: center;
 }
@@ -202,6 +202,8 @@ footer {
 .social-bar a {
     display: inline-block;
     background-color: #a36caa;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
