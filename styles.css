@@ -37,7 +37,7 @@ body::before {
 
 /* Navigation Styles */
 nav {
-    background: radial-gradient(ellipse, #e5cde8, #8f6eaf);
+    background-color: #8f6eaf;
    /* background-image: url('pencilsnav.png'); */
     background-repeat: repeat-x;
     background-position: center;
@@ -194,14 +194,14 @@ footer {
 }
 
 .social-bar {
-    background: radial-gradient(ellipse, #874092, #510659);
+    background-color: #510659;
     padding: 1.5rem 1rem;
     text-align: center;
 }
 
 .social-bar a {
     display: inline-block;
-    background-color: #a36caa;
+    background-color: #8f6eaf;
     border: 3px solid rgba(255, 255, 255, 0.2);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     color: white;
