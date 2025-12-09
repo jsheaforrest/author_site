@@ -17,6 +17,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+}
+
+/* Star pattern overlay - only affects the background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('starpattern.png');
+    background-repeat: repeat;
+    opacity: 0.15; /* Change this: 0.1 = very subtle, 0.3 = more visible */
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* Navigation Styles */
