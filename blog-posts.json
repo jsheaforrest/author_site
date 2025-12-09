@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "title": "On Fantasy Names",
+      "date": "December 9, 2025",
+      "excerpt": "One of the joys of writing secondary world fantasy is naming everything: characters, places, and the occasional bit of fictional language for flavor. (Maybe, in our case, a lot of the latte, especially in our early drafts!) But it's also one of the intimidating part: how do you make names that feel authentic without spending years creating a whole language?",
+      "slug": "fantasy-names"
+    },
+    
+    {
+      "title": "Our Writing Process",
+      "date": "November 25, 2025",
+      "excerpt": "We are not a kitchen tap. It's obvious, I know: we're people in a human suit. But when it comes to writing, we cannot sit down and simply turn on the tap and water/words flow out of us. We are an old-fashioned water pump, and we have to be primed first.",
+      "slug": "my-writing-process"
+    },
+    
+    {
+      "title": "Character Development Tips",
+      "date": "October 20, 2025",
+      "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "slug": "character-development-tips"
+    }
+  ]
+}
