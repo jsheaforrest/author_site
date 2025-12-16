@@ -9,13 +9,19 @@
 <body class="text-page">
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="nav-button active">Home</a>
-            <a href="blog.html" class="nav-button">Blog</a>
-            <a href="books.html" class="nav-button">Books</a>
-            <a href="about.html" class="nav-button">About</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-button active">Home</a>
+                <a href="blog.html" class="nav-button">Blog</a>
+                <a href="books.html" class="nav-button">Books</a>
+                <a href="about.html" class="nav-button">About</a>
+            </div>
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light" onclick="setTheme('light')" aria-label="Light theme">☀️</button>
+                <button class="theme-btn active" data-theme="colorful" onclick="setTheme('colorful')" aria-label="Colorful theme">🌈</button>
+                <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')" aria-label="Dark theme">🌙</button>
+            </div>
         </div>
     </nav>
-
     <div class="container">
         <div class="main"><h1>Welcome</h1></div>
         <p>Welcome to our author website. Here you'll find our stories, thoughts on writing, and updates on our projects.</p>
@@ -35,4 +41,5 @@
         </div>
     </footer>
 </body>
+<script src="theme.js"></script>
 </html>

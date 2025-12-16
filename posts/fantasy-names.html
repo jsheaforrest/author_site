@@ -9,10 +9,17 @@
 <body class="posts-page">
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="nav-button">Home</a>
-            <a href="../blog.html" class="nav-button active">Blog</a>
-            <a href="../books.html" class="nav-button">Books</a>
-            <a href="../about.html" class="nav-button">About</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-button">Home</a>
+                <a href="../blog.html" class="nav-button active">Blog</a>
+                <a href="../books.html" class="nav-button">Books</a>
+                <a href="../about.html" class="nav-button">About</a>
+            </div>
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light" onclick="setTheme('light')" aria-label="Light theme">☀️</button>
+                <button class="theme-btn active" data-theme="colorful" onclick="setTheme('colorful')" aria-label="Colorful theme">🌈</button>
+                <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')" aria-label="Dark theme">🌙</button>
+            </div>
         </div>
     </nav>
 
@@ -60,5 +67,6 @@
             <a href="https://bsky.app/profile/cambriancrew" target="_blank">Bluesky</a>
         </div>
     </footer>
+    <script src="../theme.js"></script>
 </body>
 </html>

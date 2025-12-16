@@ -9,10 +9,17 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="nav-button">Home</a>
-            <a href="blog.html" class="nav-button">Blog</a>
-            <a href="books.html" class="nav-button active">Books</a>
-            <a href="about.html" class="nav-button">About</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="blog.html" class="nav-button">Blog</a>
+                <a href="books.html" class="nav-button active">Books</a>
+                <a href="about.html" class="nav-button">About</a>
+            </div>
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light" onclick="setTheme('light')" aria-label="Light theme">☀️</button>
+                <button class="theme-btn active" data-theme="colorful" onclick="setTheme('colorful')" aria-label="Colorful theme">🌈</button>
+                <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')" aria-label="Dark theme">🌙</button>
+            </div>
         </div>
     </nav>
 
@@ -31,7 +38,7 @@
 
             <div class="book-card">
                 <img src="Cord1.png" alt="Cord of Three: Void-Born cover" class="book-cover">
-                <h3>Cord of Three: Void-Bound</h3>
+                <h3>Cord of Three: Void-Born</h3>
                 <p><strong>Genre:</strong> Young Adult Fantasy</p>
                 <p><strong>Status:</strong> Work In Progress. In the middle of a complete rewrite.</p>
                 <p>First in a trilogy about a teen from Earth who tracks her missing brother to an alien planet where magic works, dragons are a dominant species, and where demons - including her mother's murderer - are attempting to take over the world.</p>
@@ -54,5 +61,6 @@
             <a href="https://bsky.app/profile/yourusername" target="_blank">Bluesky</a>
         </div>
     </footer>
+    <script src="theme.js"></script>
 </body>
 </html>
