@@ -331,3 +331,143 @@ footer {
 .back-link a:hover {
     color: #52a483;
 }
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE STYLES
+   ======================================== */
+
+/* TABLET AND BELOW (768px and smaller) */
+/* This catches iPads in portrait mode and smaller */
+@media (max-width: 768px) {
+    
+    /* NAVIGATION - Stack buttons and adjust theme switcher */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    /* Navigation links stack vertically on tablet/mobile */
+    .nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 400px; /* Constrain width so buttons don't stretch */
+        align-items: center; /* Buttons fill container width */
+    }
+    
+    /* Nav buttons take full width of their container for easier tapping */
+    .nav-button {
+        width: auto;
+        min-width: 250px;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+    
+    /* Theme switcher moves below nav buttons instead of absolute positioning */
+    .theme-switcher {
+        position: static; /* Remove absolute positioning */
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    
+    /* CONTENT - Reduce padding to maximize screen space */
+    .container {
+        padding: 0 1rem 1rem 1rem;
+        margin: 2rem auto;
+    }
+    
+    .text-page .container {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* TYPOGRAPHY - Slightly smaller headings */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* BOOK GRID - Single column on tablet */
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* FOOTER - Smaller pencils */
+    .pencils {
+        height: 60px;
+        background-size: auto 60px;
+    }
+    
+    .social-bar {
+        padding: 1rem;
+    }
+    
+    .social-bar a {
+        margin: 0.25rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* MOBILE PHONES (480px and smaller) */
+/* This is for actual phone screens */
+@media (max-width: 480px) {
+    
+    /* Even smaller headings on phones */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    /* Tighter spacing everywhere */
+    .container {
+        padding: 0 0.75rem 0.75rem 0.75rem;
+        margin: 1.5rem auto;
+    }
+    
+    .text-page .container {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Blog posts get less padding */
+    .blog-post {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Book cards get less padding */
+    .book-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Nav buttons slightly smaller text */
+    .nav-button {
+        font-size: 1rem;
+        padding: 0.65rem 1rem;
+        width: 50%;
+    }
+    
+    /* Theme buttons stay same size (they're icons) */
+    .theme-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    /* Footer pencils even smaller */
+    .pencils {
+        height: 45px;
+        background-size: auto 45px;
+    }
+    
+    /* Social links stack better */
+    .social-bar a {
+        display: inline-block;
+        margin: 0.25rem;
+    }
+}
