@@ -166,6 +166,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: Curtive, serif;
 }
 
 h2 {
@@ -174,6 +175,7 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: center;
+    font-family: Curtive, serif;
 }
 
 p {
@@ -183,6 +185,53 @@ p {
 
 .container .centertext {
     text-align: center;
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta-primary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 3px solid var(--secondary-color);
+}
+
+.cta-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 3px solid var(--secondary-color);
+}
+
+.cta-secondary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 
