@@ -6,19 +6,137 @@
       "excerpt": "One of the joys of writing secondary world fantasy is naming everything: characters, places, and the occasional bit of fictional language for flavor. (Maybe, in our case, a lot of the latter, especially in our early drafts!) But it's also one of the intimidating part: how do you make names that feel authentic without spending years creating a whole language?",
       "slug": "fantasy-names"
     },
-    
     {
       "title": "Our Writing Process",
       "date": "November 25, 2025",
       "excerpt": "We are not a kitchen tap. It's obvious, I know: we're people in a human suit. But when it comes to writing, we cannot sit down and simply turn on the tap and water/words flow out of us. We are an old-fashioned water pump, and we have to be primed first.",
       "slug": "my-writing-process"
     },
-    
     {
       "title": "Character Development Tips",
       "date": "October 20, 2025",
-      "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "excerpt": "Creating authentic characters means going beyond surface-level traits. We explore how to build characters with depth, flaws, and realistic motivations that resonate with readers.",
       "slug": "character-development-tips"
+    },
+    {
+      "title": "Building Believable Magic Systems",
+      "date": "October 5, 2025",
+      "excerpt": "A good magic system has rules, limitations, and consequences. We discuss how to create magic that serves your story without becoming a narrative crutch.",
+      "slug": "magic-systems"
+    },
+    {
+      "title": "The Art of Worldbuilding",
+      "date": "September 22, 2025",
+      "excerpt": "Worldbuilding is more than drawing maps. It's about creating cultures, histories, and ecosystems that feel lived-in. Here's how we approach building worlds that feel real.",
+      "slug": "worldbuilding-basics"
+    },
+    {
+      "title": "Plotting vs. Pantsing: Finding Your Method",
+      "date": "September 8, 2025",
+      "excerpt": "Some writers outline meticulously, others discover the story as they write. We've tried both approaches and found our sweet spot somewhere in between.",
+      "slug": "plotting-vs-pantsing"
+    },
+    {
+      "title": "Writing Authentic Dialogue",
+      "date": "August 25, 2025",
+      "excerpt": "Good dialogue reveals character, advances plot, and sounds natural. We share techniques for writing conversations that feel real without reading like transcripts.",
+      "slug": "writing-dialogue"
+    },
+    {
+      "title": "Dealing with Writer's Block",
+      "date": "August 10, 2025",
+      "excerpt": "Writer's block isn't always about not knowing what to write. Sometimes it's fear, perfectionism, or exhaustion. Here's how we work through the stuck places.",
+      "slug": "writers-block"
+    },
+    {
+      "title": "The Importance of Beta Readers",
+      "date": "July 28, 2025",
+      "excerpt": "Beta readers see things we can't. They catch plot holes, confusing passages, and places where our characters don't ring true. Here's how to find and work with good beta readers.",
+      "slug": "beta-readers"
+    },
+    {
+      "title": "Creating Compelling Villains",
+      "date": "July 12, 2025",
+      "excerpt": "The best villains believe they're the hero of their own story. We explore how to write antagonists with motivations that make sense, even when their actions are terrible.",
+      "slug": "writing-villains"
+    },
+    {
+      "title": "Pacing Your Fantasy Novel",
+      "date": "June 29, 2025",
+      "excerpt": "Pacing in fantasy can be tricky—you need time for worldbuilding and character development, but you can't let the story drag. Here's how we balance exposition with action.",
+      "slug": "novel-pacing"
+    },
+    {
+      "title": "Writing Description Without Info-Dumping",
+      "date": "June 15, 2025",
+      "excerpt": "Fantasy worlds need description, but readers don't need three pages about the tapestries. We discuss techniques for weaving setting details naturally into the narrative.",
+      "slug": "writing-description"
+    },
+    {
+      "title": "The First Draft is for You",
+      "date": "June 1, 2025",
+      "excerpt": "Your first draft doesn't need to be perfect. It doesn't even need to be good. It just needs to exist. We talk about giving yourself permission to write badly at first.",
+      "slug": "first-draft-freedom"
+    },
+    {
+      "title": "Research for Fantasy Writers",
+      "date": "May 18, 2025",
+      "excerpt": "Even fantasy needs research. Whether it's historical weapons, horse behavior, or medieval agriculture, grounding your world in reality makes the magic more believable.",
+      "slug": "fantasy-research"
+    },
+    {
+      "title": "Writing Fight Scenes That Work",
+      "date": "May 3, 2025",
+      "excerpt": "Action scenes need clarity, stakes, and emotion. We break down the elements of fight scenes that keep readers engaged instead of confused.",
+      "slug": "writing-action"
+    },
+    {
+      "title": "The Revision Process: Where Stories Get Better",
+      "date": "April 20, 2025",
+      "excerpt": "First drafts are about discovery. Revisions are about craft. Here's our approach to turning a messy first draft into something readers will want to finish.",
+      "slug": "revision-tips"
+    },
+    {
+      "title": "Creating Fantasy Cultures",
+      "date": "April 5, 2025",
+      "excerpt": "A believable culture has beliefs, customs, conflicts, and contradictions. We explore how to build societies that feel authentic and three-dimensional.",
+      "slug": "fantasy-cultures"
+    },
+    {
+      "title": "Writing Multiple POV Characters",
+      "date": "March 22, 2025",
+      "excerpt": "Multiple viewpoint characters can enrich your story, but they also multiply the challenge. Each voice needs to be distinct, and each arc needs to matter.",
+      "slug": "multiple-pov"
+    },
+    {
+      "title": "The Power of Subtext",
+      "date": "March 8, 2025",
+      "excerpt": "What's left unsaid can be more powerful than what's on the page. We discuss how to use subtext to create depth and let readers make connections.",
+      "slug": "using-subtext"
+    },
+    {
+      "title": "Finding Your Writing Voice",
+      "date": "February 23, 2025",
+      "excerpt": "Your voice is the unique way you tell stories. It's not something you invent—it's something you discover by writing honestly and consistently.",
+      "slug": "writing-voice"
+    },
+    {
+      "title": "Handling Writing Criticism",
+      "date": "February 9, 2025",
+      "excerpt": "Critique can sting, even when it's helpful. We share strategies for processing feedback, separating useful advice from unhelpful opinions, and growing as writers.",
+      "slug": "handling-criticism"
+    },
+    {
+      "title": "Writing Emotional Scenes",
+      "date": "January 25, 2025",
+      "excerpt": "Making readers feel what your characters feel requires more than telling them 'she was sad.' We explore techniques for writing emotion that resonates.",
+      "slug": "emotional-writing"
+    },
+    {
+      "title": "The Role of Stakes in Storytelling",
+      "date": "January 10, 2025",
+      "excerpt": "If nothing important is at risk, readers won't care what happens. We discuss how to raise stakes throughout your story without resorting to constant escalation.",
+      "slug": "story-stakes"
     }
   ]
 }
