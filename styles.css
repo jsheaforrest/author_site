@@ -413,7 +413,7 @@ footer {
     /* Nav buttons take full width of their container for easier tapping */
     .nav-button {
         width: auto;
-        min-width: 250px;
+        min-width: 150px;
         text-align: center;
         padding: 0.75rem 1rem;
     }
@@ -504,7 +504,7 @@ footer {
     .nav-button {
         font-size: 1rem;
         padding: 0.65rem 1rem;
-        width: 50%;
+        width: 30%;
     }
     
     /* Theme buttons stay same size (they're icons) */
