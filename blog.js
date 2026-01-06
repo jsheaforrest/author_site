@@ -1,5 +1,5 @@
 // ============================================================================
-// BLOG PAGINATION SYSTEM
+// BLOG PAGINATION SYSTEM - DEBUG VERSION
 // ============================================================================
 // This script handles displaying blog posts with pagination controls
 
@@ -12,6 +12,8 @@ let postsPerPage = 10;       // How many posts to show per page
 // INITIALIZATION - Runs when page loads
 // ============================================================================
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing blog...');
+    
     // Load saved preferences from browser storage
     loadUserPreferences();
     
@@ -27,17 +29,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================================================
 // Check if user has saved preferences in localStorage
 function loadUserPreferences() {
+    console.log('Loading user preferences...');
     const savedPostsPerPage = localStorage.getItem('postsPerPage');
     const savedCurrentPage = localStorage.getItem('currentPage');
     
     if (savedPostsPerPage) {
         postsPerPage = savedPostsPerPage === 'all' ? 'all' : parseInt(savedPostsPerPage);
-        document.getElementById('posts-per-page').value = savedPostsPerPage;
+        const select = document.getElementById('posts-per-page');
+        if (select) {
+            select.value = savedPostsPerPage;
+        }
     }
     
     if (savedCurrentPage) {
         currentPage = parseInt(savedCurrentPage);
     }
+    console.log('Preferences loaded:', { postsPerPage, currentPage });
 }
 
 // ============================================================================
@@ -53,16 +60,39 @@ function saveUserPreferences() {
 // LOAD BLOG POSTS FROM JSON
 // ============================================================================
 function loadBlogPosts() {
+    console.log('Attempting to fetch blog-posts.json...');
+    
     fetch('blog-posts.json')
-        .then(response => response.json())
+        .then(response => {
+            console.log('Fetch response received:', response);
+            console.log('Response status:', response.status);
+            console.log('Response ok:', response.ok);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('JSON parsed successfully:', data);
+            console.log('Number of posts:', data.posts ? data.posts.length : 'no posts array');
             allPosts = data.posts;
             displayCurrentPage();
         })
         .catch(error => {
             console.error('Error loading blog posts:', error);
-            document.getElementById('blog-posts-container').innerHTML = 
-                '<p>Sorry, there was an error loading the blog posts.</p>';
+            console.error('Error name:', error.name);
+            console.error('Error message:', error.message);
+            console.error('Error stack:', error.stack);
+            
+            const container = document.getElementById('blog-posts-container');
+            if (container) {
+                container.innerHTML = `
+                    <p style="color: red; font-weight: bold;">Error loading blog posts:</p>
+                    <p>${error.message}</p>
+                    <p>Check the browser console (F12) for more details.</p>
+                `;
+            }
         });
 }
 
@@ -70,11 +100,19 @@ function loadBlogPosts() {
 // DISPLAY POSTS FOR CURRENT PAGE
 // ============================================================================
 function displayCurrentPage() {
+    console.log('Displaying current page:', currentPage);
     const container = document.getElementById('blog-posts-container');
+    
+    if (!container) {
+        console.error('Container element not found!');
+        return;
+    }
+    
     container.innerHTML = ''; // Clear existing posts
     
     // If showing all posts, display them all
     if (postsPerPage === 'all') {
+        console.log('Showing all posts');
         allPosts.forEach(post => {
             container.innerHTML += createPostHTML(post);
         });
@@ -86,6 +124,8 @@ function displayCurrentPage() {
     const startIndex = (currentPage - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
     const postsToShow = allPosts.slice(startIndex, endIndex);
+    
+    console.log(`Showing posts ${startIndex} to ${endIndex}:`, postsToShow.length);
     
     // Display the posts
     postsToShow.forEach(post => {
@@ -119,6 +159,11 @@ function createPostHTML(post) {
 function updatePaginationControls() {
     const totalPages = Math.ceil(allPosts.length / postsPerPage);
     const paginationNav = document.getElementById('pagination-nav');
+    
+    if (!paginationNav) {
+        console.error('Pagination nav element not found!');
+        return;
+    }
     
     // Don't show pagination if there's only one page or less
     if (totalPages <= 1) {
@@ -172,6 +217,7 @@ function updatePaginationControls() {
 // NAVIGATE TO A SPECIFIC PAGE
 // ============================================================================
 function goToPage(pageNumber) {
+    console.log('Going to page:', pageNumber);
     currentPage = pageNumber;
     saveUserPreferences();
     displayCurrentPage();
@@ -181,12 +227,21 @@ function goToPage(pageNumber) {
 // SETUP EVENT LISTENERS
 // ============================================================================
 function setupEventListeners() {
+    console.log('Setting up event listeners...');
+    
     // Listen for changes to posts-per-page dropdown
-    document.getElementById('posts-per-page').addEventListener('change', function(e) {
-        const value = e.target.value;
-        postsPerPage = value === 'all' ? 'all' : parseInt(value);
-        currentPage = 1; // Reset to first page when changing posts per page
-        saveUserPreferences();
-        displayCurrentPage();
-    });
+    const select = document.getElementById('posts-per-page');
+    if (select) {
+        select.addEventListener('change', function(e) {
+            console.log('Posts per page changed to:', e.target.value);
+            const value = e.target.value;
+            postsPerPage = value === 'all' ? 'all' : parseInt(value);
+            currentPage = 1; // Reset to first page when changing posts per page
+            saveUserPreferences();
+            displayCurrentPage();
+        });
+        console.log('Event listener attached to posts-per-page');
+    } else {
+        console.error('Posts-per-page select element not found!');
+    }
 }

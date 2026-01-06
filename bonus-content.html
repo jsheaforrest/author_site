@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Content - Author Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" class="nav-button" title="Home page">Home</a>
+                <a href="blog.html" class="nav-button" title="Read our blog posts">Blog</a>
+                <a href="books.html" class="nav-button" title="View our books and stories">Books</a>
+                <a href="bonus-content.html" class="nav-button active" title="Bonus content for our stories">Bonus Content</a>
+                <a href="about.html" class="nav-button" title="Learn about us">About</a>
+            </div>
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light" onclick="setTheme('light')" aria-label="Light theme" title="Switch to light theme">☀️</button>
+                <button class="theme-btn active" data-theme="colorful" onclick="setTheme('colorful')" aria-label="Colorful theme" title="Switch to colorful theme">🌈</button>
+                <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')" aria-label="Dark theme" title="Switch to dark theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Bonus Content</h1>
+        <div class="centertext">
+            <p>Dive deeper into our worlds with maps, character art, deleted scenes, and more.</p>
+        </div>
+
+        <!-- Era's End Section -->
+        <section id="eras-end" class="bonus-section">
+            <h2>Era's End</h2>
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <h3><a href="bonus/eras-end-magic-system.html">The Magic System</a></h3>
+                    <p>An in-depth look at how magic works in the world of Era's End, including the different types of magic, their sources, and limitations.</p>
+                </div>
+
+                <div class="bonus-item">
+                    <h3><a href="bonus/eras-end-bonus-scenes.html">Bonus Scenes</a></h3>
+                    <p>Deleted scenes, alternate perspectives, and other bonus content that didn't make it into the main story.</p>
+                </div>
+
+                <!-- Add more Era's End bonus content here as you create it -->
+                <!-- Example template:
+                <div class="bonus-item">
+                    <h3><a href="bonus/eras-end-map.html">World Map</a></h3>
+                    <p>Interactive map showing the regions and locations featured in the story.</p>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- Cord of Three Section -->
+        <section id="cord-of-three" class="bonus-section">
+            <h2>Cord of Three</h2>
+            <div class="bonus-grid">
+                <p class="coming-soon">Bonus content coming soon!</p>
+
+                <!-- Add Cord of Three bonus content here as you create it -->
+                <!-- Example template:
+                <div class="bonus-item">
+                    <h3><a href="bonus/cord-character-art.html">Character Designs</a></h3>
+                    <p>Visual references and concept art for the main characters.</p>
+                </div>
+                -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="pencils"></div>
+        <div class="social-bar">
+            <a href="https://tumblr.com/yourusername" target="_blank" title="Follow us on Tumblr">Tumblr</a>
+            <a href="https://bsky.app/profile/yourusername" target="_blank" title="Follow us on Bluesky">Bluesky</a>
+        </div>
+    </footer>
+    <script src="theme.js"></script>
+</body>
+</html>

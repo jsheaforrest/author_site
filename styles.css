@@ -525,3 +525,111 @@ footer {
         margin: 0.25rem;
     }
 }
+
+/* ===== BONUS CONTENT STYLES ===== */
+.bonus-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 2px solid var(--border-color);
+}
+
+.bonus-section:first-of-type {
+    border-top: none;
+}
+
+.bonus-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.bonus-item {
+    background-color: var(--surface-color);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bonus-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.bonus-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.bonus-item h3 a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.bonus-item h3 a:hover {
+    color: var(--secondary-color);
+}
+
+.bonus-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.coming-soon {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.7;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / -1;
+}
+
+/* Link from book cards to bonus content */
+.bonus-link {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.bonus-link a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.bonus-link a:hover {
+    color: var(--link-hover);
+}
+
+/* Back link at bottom of bonus content pages */
+.back-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-link a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link a:hover {
+    color: var(--link-hover);
+}
+
+@media (max-width: 768px) {
+    .bonus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bonus-section {
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+    }
+}
