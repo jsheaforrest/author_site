@@ -16,3 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.classList.toggle('active', btn.dataset.theme === savedTheme);
   });
 });
+
+// Hamburger menu toggle
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('open');
+}
